@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Contenedor Padre -->
+    <p class="container text-center col-2 border border-dark p-2 bg-primary text-white"><b>DETALLE DE PRODUCTOS</b></p>
+    <div class="container mt-5 border border-danger">   
+        <!-- Solicitar Datos -->
+        <section class="border mt-2 mb-2">
+            <form class="w-100">
+                <div class="row mt-2 mb-2 ms-2 me-2">
+                    <div class="col-3">
+                        <input type="text" class="form-control" 
+                            placeholder="Nombre del Producto"
+                            name="NombreProducto" id="NombreProducto">
+                    </div>
+                    <div class="col-3">
+                        <input type="number" class="form-control" 
+                            placeholder="Costo del Producto"
+                            name="Costo" id="Costo">
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control" 
+                            placeholder="Observaciones"
+                            name="observaciones" id="observaciones">
+                    </div>
+                    <div class="col-3">
+                        <input type="button" class="btn btn-success" value="Enviar Datos" onclick="addItem()">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- Mostrar Datos -->
+        <section class="border mt-2 mb-2 ">
+            <div class="mt-2 mb-2 ms-2 me-2 " id="items-list">
+                No hay productos
+            </div>
+        </section>
+    </div>
+    </div>
+
+    <script src="./bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/objectScrpt.js"></script>
+
+</body>
+</html>
